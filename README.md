@@ -51,9 +51,11 @@ To get a local copy up and running, follow these simple steps.
     ```
 3.  **Set up YouTube API Key:**
     *   Obtain a YouTube Data API v3 key from the Google Cloud Console.
-    *   Open `src/services/youtube-api.ts` and replace `AIzaSyBXFooJ8EnMuOdPmLmzFQD7ebup_WMfykI` with your actual API key.
-        ```typescript
-        const API_KEY = "YOUR_YOUTUBE_API_KEY";
+    *   Create a `.env` file in the root of your project.
+    *   Add your API key to the `.env` file in the format `VITE_YOUTUBE_API_KEY=YOUR_ACTUAL_YOUTUBE_API_KEY`.
+    *   Ensure `.env` is added to your `.gitignore` to prevent committing your API key.
+        ```
+        VITE_YOUTUBE_API_KEY=YOUR_ACTUAL_YOUTUBE_API_KEY
         ```
 4.  **Run the development server:**
     Using Bun:
